@@ -1,450 +1,252 @@
 # Uni-App应用 技术栈分析
 
+> **数据来源**: DEX字符串分析 + Native库符号表 + assets目录检查 + META-INF元数据
+> **置信度**: 高 (基于实际文件证据)
+
 ## 应用概述
 - **应用名称**: Uni-App跨平台应用
-- **包名**: (根据具体应用)
-- **应用类型**: 跨平台应用框架
+- **包名**: io.dcloud (根据DEX分析)
+- **应用类型**: 跨平台应用
 - **开发者**: DCloud (数字天堂)
+
+---
 
 ## 1. 开发框架和技术平台
 
 ### 主要技术栈
 - **开发语言**: Kotlin + JavaScript/Vue.js
-- **UI框架**: Uni-App + 原生Android View
+- **UI框架**: **Uni-App（基于Weex）**
 - **架构模式**: 混合架构
 - **最低API级别**: API 21+
 
 ### 技术架构
-- WebView集成
+- Uni-App框架
+- Weex底层引擎
 - 原生桥接
-- 模块化架构
 - 热更新支持
 
-## 2. Uni-App框架
-
-### Uni-App核心
-- **框架特性**:
-  - Vue.js语法
-  - 跨平台编译
-  - 原生能力调用
-  - 条件编译
-  - 多端适配
-
-### Uni-App组件
-- 内置组件
-- 自定义组件
-- 插件市场
-- API调用
-- 模块化开发
-
-## 3. WebView集成
-
-### WebView架构
-- **WebView功能**:
-  - 混合渲染
-  - JavaScript桥接
-  - 原生交互
-  - 性能优化
-  - 内存管理
-
-### WebView特性
-- H5页面加载
-- 本地HTML加载
-- JavaScript执行
-- 桥接通信
-- 页面控制
-
-## 4. 原生桥接
-
-### JS Bridge
-- **桥接功能**:
-  - JavaScript调用原生
-  - 原生调用JavaScript
-  - 数据传递
-  - 事件通信
-  - 回调处理
-
-### 桥接特性
-- 异步调用
-- 同步调用
-- 对象传递
-- 函数调用
-- 事件监听
-
-## 5. 淘宝集成
-
-### 淘宝生态
-- **淘宝功能**:
-  - 淘宝登录
-  - 淘宝授权
-  - 淘宝支付
-  - 淘宝跳转
-  - 淘宝联盟
-
-### 淘宝特性
-- OAuth认证
-- 商品跳转
-- 订单同步
-- 支付宝集成
-- 电商功能
-
-## 6. 广告集成
-
-### 广告系统
-- **广告功能**:
-  - 开屏广告
-  - 插屏广告
-  - 激励视频
-  - 原生广告
-  - Banner广告
-
-### 广告特性
-- 广告加载
-- 广告展示
-- 广告缓存
-- 广告统计
-- 广告优化
-
-## 7. 应用配置
-
-### 配置管理
-- **配置文件**:
-  - manifest.json
-  - pages.json
-  - uni.scss
-  - 组件配置
-  - 页面配置
-
-### 配置特性
-- 应用信息
-- 权限配置
-- 网络配置
-- 图标配置
-- 启动配置
-
-## 8. 资源管理
-
-### 资源系统
-- **资源类型**:
-  - 图片资源
-  - 字体资源
-  - 样式资源
-  - 组件资源
-  - 静态资源
-
-### 资源特性
-- 资源压缩
-- 资源缓存
-- 资源更新
-- 条件加载
-- 版本管理
-
-## 9. 数据存储
-
-### 存储系统
-- **存储类型**:
-  - 本地存储
-  - 缓存存储
-  - 同步存储
-  - 数据库存储
-  - 文件存储
-
-### 存储特性
-- 数据持久化
-- 数据同步
-- 数据加密
-- 数据清理
-- 存储配额
-
-## 10. 网络通信
-
-### HTTP请求
-- **网络功能**:
-  - uni.request
-  - uni.uploadFile
-  - uni.downloadFile
-  - WebSocket连接
-  - 数据缓存
-
-### 网络特性
-- 请求拦截
-- 响应处理
-- 错误处理
-- 超时控制
-- 并发管理
-
-## 11. 设备API
-
-### 设备功能
-- **设备调用**:
-  - 相机调用
-  - 相册选择
-  - 地理位置
-  - 设备信息
-  - 网络状态
-
-### 设备特性
-- 原生能力
-- 权限处理
-- 设备兼容
-- 功能降级
-- 错误处理
-
-## 12. UI组件
-
-### 组件系统
-- **内置组件**:
-  - view
-  - scroll-view
-  - swiper
-  - list
-  - rich-text
-
-### 组件特性
-- 组件通信
-- 组件生命周期
-- 插槽使用
-- 事件处理
-- 样式绑定
-
-## 13. 路由系统
-
-### 页面路由
-- **路由功能**:
-  - 页面跳转
-  - 页面传参
-  - 页面返回
-  - TabBar切换
-  - 模态窗口
-
-### 路由特性
-- 路由拦截
-- 路由守卫
-- 路由参数
-- 路由缓存
-- 路由动画
-
-## 14. 状态管理
-
-### 状态系统
-- **状态管理**:
-  - Vuex集成
-  - 组件状态
-  - 全局状态
-  - 状态持久化
-  - 状态同步
-
-### 状态特性
-- 响应式状态
-- 状态计算
-- 状态监听
-- 状态缓存
-- 状态共享
-
-## 15. 性能优化
-
-### 优化策略
-- **性能优化**:
-  - 页面加载优化
-  - 资源加载优化
-  - 渲染性能优化
-  - 内存优化
-  - 网络优化
-
-### 优化特性
-- 懒加载
-- 预加载
-- 缓存策略
-- 骨架屏
-- 分包加载
-
-## 16. 调试工具
-
-### 开发工具
-- **调试功能**:
-  - 真机调试
-  - 控制台输出
-  - 性能监控
-  - 网络监控
-  - 日志系统
-
-### 调试特性
-- 热重载
-- 代码注入
-- 错误追踪
-- 性能分析
-- 内存分析
-
-## 17. 多端适配
-
-### 平台支持
-- **支持平台**:
-  - Android
-  - iOS
-  - H5
-  - 小程序
-  - 快应用
-
-### 适配特性
-- 条件编译
-- 平台检测
-- 样式适配
-- API适配
-- 功能降级
-
-## 18. 插件系统
-
-### 插件生态
-- **插件功能**:
-  - 官方插件
-  - 第三方插件
-  - 自定义插件
-  - 插件市场
-  - 插件管理
-
-### 插件特性
-- 插件安装
-- 插件配置
-- 插件调用
-- 插件更新
-- 插件兼容
-
-## 19. 安全特性
-
-### 安全系统
-- **安全功能**:
-  - HTTPS通信
-  - 数据加密
-  - 代码混淆
-  - 权限控制
-  - 漏洞修复
-
-### 安全特性
-- 代码签名
-- 数据保护
-- 防篡改
-- 防逆向
-- 安全审计
-
-## 20. 国际化
-
-### 多语言支持
-- **i18n功能**:
-  - 多语言切换
-  - 本地化资源
-  - 日期格式化
-  - 数字格式化
-  - 货币格式化
-
-### 国际化特性
-- 语言包
-- 翻译管理
-- 时区处理
-- RTL布局
-- 文化适配
-
-## 21. 第三方集成
-
-### 集成功能
-- **集成类型**:
-  - 支付集成
-  - 登录集成
-  - 分享集成
-  - 推送集成
-  - 统计集成
-
-### 集成特性
-- 插件封装
-- 统一接口
-- 错误处理
-- 版本兼容
-- 文档完善
-
-## 22. 热更新
-
-### 更新系统
-- **更新功能**:
-  - 资源更新
-  - 代码更新
-  - 版本检测
-  - 增量更新
-  - 强制更新
-
-### 更新特性
-- 快速迭代
-- 无需审核
-- 精准更新
-- 回滚机制
-- 更新统计
-
-## 23. App Key管理
-
-### 密钥系统
-- **App Key功能**:
-  - App Key配置
-  - App Key验证
-  - App Key权限
-  - App Key管理
-  - App Key安全
-
-### Key特性
-- 安全存储
-- 权限控制
-- 密钥轮换
-- 密钥吊销
-- 密钥审计
-
-## 24. WGT集成
-
-### WGT功能
-- **Widget功能**:
-  - WGT安装包
-  - Widget管理
-  - Widget更新
-  - Widget配置
-  - Widget同步
-
-### Widget特性
-- 桌面Widget
-- 通知Widget
-- 设置Widget
-- 快捷方式
-- 自定义Widget
-
-## 25. 开发模式总结
+### 证据
+```
+assets: uni-jsframework.js (729KB) - Vue2框架
+assets: uni-jsframework-vue3.js (733KB) - Vue3框架
+assets: dcloud_uniplugins.json - 插件配置
+SO: libweexcore.so + 相关库
+DEX: Lio/dcloud/*
+```
+
+---
+
+## 2. Uni-App框架核心
+
+### Uni-App JavaScript框架
+- **Vue2框架**:
+  - uni-jsframework.js (729KB)
+  - Vue2完整实现
+  - 模板编译
+  - 组件系统
+
+- **Vue3框架**:
+  - uni-jsframework-vue3.js (733KB)
+  - Vue3完整实现
+  - Composition API
+  - 响应式系统
+
+### 证据
+```
+assets: uni-jsframework.js (729KB)
+assets: uni-jsframework-vue3.js (733KB)
+```
+
+---
+
+## 3. Weex底层引擎
+
+### Weex Native库
+- **libweexcore.so**: Weex核心引擎
+- **libweexjsb.so**: Weex JavaScript Bridge
+- **libweexjst.so**: Weex JavaScript Template
+- **libweexjss.so**: Weex JavaScript Style
+
+### 证据
+```
+SO: libweexcore.so
+SO: libweexjsb.so
+SO: libweexjst.so
+SO: libweexjss.so
+```
+
+---
+
+## 4. DCLOUD完整生态
+
+### DCLOUD核心组件
+- **io.dcloud包名**:
+  - `io.dcloud.base.R*`: 基础资源
+  - `io.dcloud.common.DHInterface.*`: 通用接口
+  - `io.dcloud.annotation.*`: 注解处理器
+
+### DCLOUD下载器
+- **下载管理**:
+  - `io.dcloud.android.downloader.DownloadManagerImpl`: 下载管理器实现
+  - `io.dcloud.android.downloader.callback.DCDownloadManager`: 下载回调
+
+### 证据
+```
+DEX: Lio/dcloud/base/R*
+DEX: Lio/dcloud/common/DHInterface/*
+DEX: Lio/dcloud/annotation/*
+DEX: Lio/dcloud/android/downloader/DownloadManagerImpl
+DEX: Lio/dcloud/android/downloader/callback/DCDownloadManager
+```
+
+---
+
+## 5. UTS运行时
+
+### Uni-App Type Script
+- **UTS**:
+  - libuts-runtime.so - UTS运行时
+  - TypeScript支持
+  - 类型安全
+
+### 证据
+```
+SO: libuts-runtime.so
+assets: uni-uts/ - UTS目录
+```
+
+---
+
+## 6. 图片编辑功能
+
+### DCLOUD图片编辑器
+- **IMGEditActivity**:
+  - `io.dcloud.feature.gallery.imageedit.IMGEditActivity`
+  - 图片编辑功能
+  - 滤镜、裁剪、旋转
+
+### 证据
+```
+DEX: Lio/dcloud/feature/gallery/imageedit/IMGEditActivity
+```
+
+---
+
+## 7. 插件系统
+
+### Uni-App插件配置
+- **dcloud_uniplugins.json**: 插件配置文件
+- 插件市场集成
+- 自定义插件支持
+
+### 证据
+```
+assets: dcloud_uniplugins.json
+```
+
+---
+
+## 8. 图像处理
+
+### Fresco图像库
+- **libimagepipeline.so**: Fresco图像管道
+- 高性能图片加载
+- 内存优化
+- 图片缓存
+
+### 证据
+```
+SO: libimagepipeline.so
+```
+
+---
+
+## 9. 特效和模糊
+
+### DCBlur
+- **libdcblur.so**: DCBlur模糊效果
+- 高斯模糊
+- 背景模糊
+
+### GIF支持
+- **libgifimage.so**: GIF图像支持
+- GIF动画播放
+
+### 证据
+```
+SO: libdcblur.so
+SO: libgifimage.so
+```
+
+---
+
+## 10. 应用资源
+
+### 动态DEX
+- **39285EFA.dex**: 动态加载的DEX文件
+- 热更新支持
+
+### 应用目录
+- **apps/**: 应用资源目录
+- 页面和组件资源
+
+### 证据
+```
+assets: 39285EFA.dex
+assets: apps/
+```
+
+---
+
+## 11. Native库清单
+
+### 关键SO文件
+| SO文件 | 用途 |
+|--------|------|
+| libweexcore.so | Weex核心引擎 |
+| libweexjsb.so | Weex JavaScript Bridge |
+| libweexjst.so | Weex JavaScript Template |
+| libweexjss.so | Weex JavaScript Style |
+| libuts-runtime.so | UTS运行时 |
+| libdcblur.so | DCBlur模糊效果 |
+| libgifimage.so | GIF图像支持 |
+| libimagepipeline.so | Fresco图像管道 |
+
+---
+
+## 12. 开发模式总结
 
 ### 技术选型亮点
-1. **Uni-App框架**: 一套代码多端运行
-2. **Vue.js生态**: 熟悉的前端技术栈
-3. **原生桥接**: 完整的原生能力
-4. **热更新**: 快速迭代能力
-5. **插件生态**: 丰富的插件市场
+1. **Uni-App框架**: 基于 Weex 的跨平台方案
+2. **Vue2/Vue3双支持**: 灵活的框架选择
+3. **DCloud生态**: 完整的开发者服务
+4. **UTS**: TypeScript类型安全
+5. **图片编辑**: 内置图片编辑功能
 
 ### 架构优势
-- 跨平台一致
-- 快速开发
-- 降低成本
+- 一套代码多端运行
+- Vue.js开发体验
+- 完整的插件生态
 - 热更新支持
-- 原生性能
+- DCloud云端服务
 
 ### 核心竞争力
-- **开发效率**: 一套代码多端运行
-- **用户体验**: 接近原生性能
-- **迭代速度**: 热更新快速迭代
-- **生态丰富**: 完善的插件生态
-- **成本优势**: 降低开发和维护成本
+- **跨平台**: 多端一致
+- **开发效率**: 快速开发
+- **热更新**: 无需审核
+- **生态丰富**: 插件市场
+- **成本优势**: 降低成本
 
 ### 适用场景
 - 跨平台应用开发
 - 快速原型开发
 - 中小型应用
-- 电商应用
-- 内容展示应用
+- 需要热更新的应用
 
 ### 技术评分
 - **跨平台**: ★★★★★ (多端支持)
 - **开发效率**: ★★★★★ (快速开发)
-- **性能表现**: ★★★★☆ (接近原生)
+- **性能表现**: ★★★★☆ (基于Weex)
 - **热更新**: ★★★★★ (快速迭代)
 - **生态丰富**: ★★★★★ (插件丰富)
 
@@ -461,23 +263,55 @@
 - 开发者社区活跃
 - 技术不断创新
 
-### 技术特色
-1. **Vue.js**: 熟悉的前端框架
-2. **多端编译**: 一套代码多端运行
-3. **原生能力**: 完整的原生API
-4. **热更新**: 无需审核的更新
-5. **插件市场**: 丰富的插件生态
+---
 
-### 未来趋势
-1. **性能优化**: 更接近原生性能
-2. **工具完善**: 更好的开发工具
-3. **生态扩展**: 更多的插件和组件
-4. **多端支持**: 更多平台支持
-5. **AI集成**: AI辅助开发
+## 附录：分析证据
 
-### Uni-App优势
-1. **开发成本**: 一套代码降低成本
-2. **维护成本**: 统一代码库维护
-3. **迭代速度**: 热更新快速迭代
-4. **学习曲线**: Vue.js降低学习成本
-5. **社区支持**: 活跃的开发者社区
+### DEX文件关键字符串
+```
+Lio/dcloud/base/R*
+Lio/dcloud/common/DHInterface/*
+Lio/dcloud/annotation/*
+Lio/dcloud/android/downloader/DownloadManagerImpl
+Lio/dcloud/android/downloader/callback/DCDownloadManager
+Lio/dcloud/feature/gallery/imageedit/IMGEditActivity
+```
+
+### SO文件关键特征
+```
+libweexcore.so - Weex核心
+libweexjsb.so - Weex JS Bridge
+libweexjst.so - Weex JS Template
+libweexjss.so - Weex JS Style
+libuts-runtime.so - UTS运行时
+libdcblur.so - DCBlur模糊
+libgifimage.so - GIF支持
+libimagepipeline.so - Fresco图像管道
+```
+
+### assets目录关键内容
+```
+uni-jsframework.js (729KB) - Vue2框架
+uni-jsframework-vue3.js (733KB) - Vue3框架
+dcloud_uniplugins.json - 插件配置
+39285EFA.dex - 动态DEX
+apps/ - 应用目录
+uni-uts/ - UTS目录
+```
+
+---
+
+## 修正说明
+
+与原报告的主要区别：
+1. **减少通用描述**：移除了大量Uni-App框架自带功能的通用描述
+2. **增加实际证据**：每个技术点都有DEX、SO或assets的具体证据
+3. **强调UTS**：原报告未提及，但实际存在libuts-runtime.so
+4. **具体功能**：增加了DCLOUD图片编辑器等实际发现的功能
+5. **Vue2/Vue3双框架**：明确指出两个框架文件同时存在
+
+---
+
+**修正日期**: 2026-03-27
+**分析方法**: DEX字符串 + Native库符号 + assets检查
+**修正说明**: 减少通用描述，增加实际功能证据，强调UTS和具体功能
