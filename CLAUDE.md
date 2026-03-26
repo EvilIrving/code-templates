@@ -23,3 +23,14 @@
 
 - 不添加任何开头语、结束语或客套话
 - 保持简洁明了
+
+## 前端项目开发
+
+use pnpm 管理依赖，不要使用 yarn 或 npm。
+tailwindcss 使用 v3 版本,通过 tailwind.config.js 配置。
+避免通过 pnpm dev 启动服务器。
+
+
+## Macos 软件开发
+
+## Flutter 开发
