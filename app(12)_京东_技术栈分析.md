@@ -1,5 +1,18 @@
 # 京东 (React Native应用) 技术栈分析
 
+> **验证元数据**
+> - **验证日期**: 2026-03-27
+> - **数据来源**: DEX字符串搜索 + SO文件验证
+> - **置信度**: 高置信度 (99%)
+> - **关键证据**:
+>   - DEX中`com/facebook/react`: 1482处引用
+>   - SO中存在`libhermes.so` (Hermes引擎)
+>   - SO中存在`libreactnativejni.so`
+>   - SO中存在`libreactnativeblob.so`
+> - **验证状态**: ✓ 已验证 - React Native声明有强证据支持
+
+---
+
 ## 应用基本信息
 - **目录名**: base(12)
 - **应用类型**: 电商应用

@@ -1,5 +1,16 @@
 # Sony Headphones Connect 技术栈分析
 
+
+> **验证元数据**
+> - **验证日期**: 2026-03-27
+> - **数据来源**: DEX字符串搜索
+> - **置信度**: 高置信度 (95%)
+> - **关键证据**: DEX中检测到Jetpack Compose
+> - **验证状态**: ✓ 已验证 - Jetpack Compose声明有证据支持
+
+---
+
+
 ## 应用概述
 - **应用名称**: Sony Headphones Connect (索尼耳机)
 - **包名**: com.sony.songpal.mdr

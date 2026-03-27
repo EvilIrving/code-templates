@@ -1,5 +1,17 @@
 # Instagram 技术栈分析
 
+
+> **验证元数据**
+> - **验证日期**: 2026-03-27
+> - **数据来源**: DEX字符串搜索
+> - **置信度**: 高置信度 (95%)
+> - **关键证据**: DEX中检测到Jetpack Compose、React Native、Litho
+> - **验证状态**: ✓ 已验证 - 三框架混合声明有证据支持
+> - **技术特点**: 使用多个UI框架（Compose + RN + Litho）
+
+---
+
+
 ## 应用概述
 - **应用名称**: Instagram
 - **包名**: com.instagram.android
